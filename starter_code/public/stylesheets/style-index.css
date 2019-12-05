@@ -1,0 +1,31 @@
+body {
+    background: url(../images/cinema.jpg);
+    background-size:cover;
+}
+
+.title{
+    margin-left:800px;
+    margin-top:0;
+    margin-bottom:0;
+    font-size:4em;
+    color:white;
+    width:250px;    
+}
+
+.check{
+    margin-left:800px;
+    color:rgb(113,154,169);
+    font-size:1.5em;
+    background:white;
+    width:200px;
+    border-radius:60px;
+    text-align: center;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.check > a {
+    text-decoration:none;
+}
