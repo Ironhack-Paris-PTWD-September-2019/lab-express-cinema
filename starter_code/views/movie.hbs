@@ -1,0 +1,29 @@
+<div id="movie">
+  {{#with movie}}
+    <div class="cover">
+      <img src="{{image}}" alt="Cover of {{title}}">
+    </div>
+    
+    <div class="description">
+      <a href="/movies">Go back</a>
+      <h1>{{title}}</h1>
+      <h2>Director: {{director}}</h2>
+      <p class="bold">Stars: </p>
+      <ul>
+        {{#each stars}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      <p>{{description}}</p>
+      <p>
+        {{#each showtimes}}
+          {{#if @first}}
+            {{this}}
+          {{else}}
+            | {{this}}
+          {{/if}}
+        {{/each}}
+      </p>
+    </div>
+  {{/with}}
+</div>

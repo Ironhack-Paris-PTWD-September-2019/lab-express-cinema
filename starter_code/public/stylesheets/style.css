@@ -1,90 +1,78 @@
-*, :before, :after {box-sizing:border-box;}
+*, :before, :after {
+  box-sizing: border-box; }
 
 :root {
-    --white: #F7F9F9;
-    --light-blue: #2081C3;
-    --dark-blue: #0A2C42;
-    --grey: rgba(145, 145, 145, 0.481);
-
-    --gutter:1.5rem;
-}
+  --white: #F7F9F9;
+  --light-blue: #2081C3;
+  --dark-blue: #0A2C42;
+  --grey: rgba(145, 145, 145, 0.481);
+  --gutter:1.5rem; }
 
 body {
-    margin:0;
-    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  margin: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
-img {max-width: 100%;}
+img {
+  max-width: 100%; }
 
 a {
-  color: #00B7FF;
-}
+  color: #00B7FF; }
 
 #homepage {
   background-image: url("/images/cinema.jpg");
   background-size: cover;
-  width:100vw;
-  height:100vh;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: row-reverse;
-  padding-right: 4em;
-}
+  padding-right: 4em; }
 
 #homepage #interaction {
-  padding-top: 30vh;
-}
+  padding-top: 30vh; }
 
 #homepage #interaction h1 {
   color: white;
   font-size: 5rem;
-  margin-bottom: .5em;
-}
+  margin-bottom: .5em; }
 
 #homepage #interaction a {
   color: #7AB3C8;
   background-color: white;
   padding: .8em 1.4em;
   border-radius: 20px;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 #movies {
   padding: 2em;
-  text-align: center;
-}
+  text-align: center; }
 
 #movies #moviesList {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-}
+  justify-content: center; }
 
 #movies #moviesList .movieCard {
   text-align: center;
-  width:calc(25%- 3*var(--gutter)/4);
+  width: calc(25%- 3*var(--gutter)/4);
   padding: 1em;
-  margin-bottom: 1em;
-}
+  margin-bottom: 1em; }
 
 #movies #moviesList .movieCard p {
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 #movie {
   display: flex;
-  padding: 2em;
-}
+  padding: 2em; }
 
 #movie .cover {
   padding-top: 1em;
-  width: 500px;
-}
+  width: 500px; }
 
 #movie .description {
-  margin-left: 2em;
-}
+  margin-left: 2em; }
 
 #movie .description .bold {
-  font-weight: bold;
-}
+  font-weight: bold; }
+
+/*# sourceMappingURL=style.css.map */
