@@ -1,0 +1,36 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+a {
+  color: #00B7FF; }
+
+/*# sourceMappingURL=style.css.map */
+
+.movietitle{
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.seemore{
+  padding-bottom:10px;
+}
+
+.allmovie{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  margin-left:20px;
+  margin-right:20px;
+}
+
+.eachmovie{
+  width:33%;
+}
+
+.moviedetails{
+  display:flex
+}
+
+.moviedetailsimg {
+  margin-right:30px;
+}
