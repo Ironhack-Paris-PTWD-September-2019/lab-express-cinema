@@ -18,7 +18,10 @@ router.get('/movies', (req, res, next) => {
     });
     
   })
-  .catch(err=>console.error(err));
+  .catch(err=>{
+    console.error(err);
+    next(err);
+  });
   
 });
 
@@ -29,7 +32,7 @@ router.get('/movies/:id', (req, res, next) => {
     console.log('Movie details loaded');
     
     res.render('movie', {
-      movie : movie 
+      movie: movie 
     });
     
   })

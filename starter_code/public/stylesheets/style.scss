@@ -21,12 +21,12 @@ a {
 .container-home {
   background-image: url("/images/cinema.jpg"); 
   background-repeat:no-repeat; 
-  background-size: 100% 100%;
+  background-size: cover;
   height:100vh;
 }
 
 .container-home .buttons{
-  width:40%;
+  width:50%;
   margin-left:auto;
   position:relative; 
   top:8%;
@@ -37,7 +37,7 @@ a {
   margin-top:0;
   margin-bottom:0.5em;
   color:white;
-  font-size: 7em;
+  font-size: 10em;
   line-height: 1.1em;
  
 
@@ -48,8 +48,40 @@ a {
   border-radius: 1.6em;
   background-color:white;
   padding: 1em 2.3em;
-  font-size:1.1em;
+  font-size:1.5em;
 }
+
+@media (max-width:800px) {
+  /*en tablette*/ 
+
+  .container-home .buttons{
+    width:60%;
+    padding-right:2em;
+    text-align:right;
+  
+  }
+
+  .container-home .buttons h1{
+    font-size: 4em; 
+  
+  }
+
+  .container-home .buttons a{
+    display: inline-block;
+    margin-top: 1em;
+    font-size:1.1em;
+  }
+}  
+
+@media (max-width:450px) {
+  /* SmartPhone */ 
+
+  .container-home .buttons{
+    width:90%;
+    text-align:center;
+    top:35%;
+  }
+} 
 
 /*
 
@@ -67,6 +99,7 @@ a {
   padding:2em;
   display: flex; 
   flex-wrap: wrap;
+  justify-content:center;
 
 }
 
@@ -74,7 +107,7 @@ a {
   width:30%; 
   display:flex; 
   flex-flow: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-bottom:3em;
 }
@@ -86,6 +119,23 @@ a {
 .movie-container .card a {
   font-size:1.3em;
 }
+
+@media (max-width:800px) {
+  /*en tablette*/ 
+
+  .movie-container .card {
+    width:40%; 
+  }
+
+}  
+@media (max-width:450px) {
+  /* SmartPhone */ 
+  .movie-container .card {
+    width:80%; 
+
+  }
+
+}  
 
 /*
  ######  ####### #######    #    ### #       
@@ -99,12 +149,17 @@ a {
 
 .movie-details-container {
   padding:2em;
+  height:100vh;
 }
 .movie-details-container .movie-details {
   width:70%;
   display:flex; 
   justify-content: space-between;
   align-items: center;
+  margin-left:auto;
+  margin-right:auto;
+  position: relative;
+  top:25%;
 }
 
 .movie-details-container .movie-details .movie-info {
@@ -134,3 +189,44 @@ a {
   border-right : 1px solid;
   padding-right:8px;
 }
+
+@media (max-width:800px) {
+  /*en tablette*/ 
+  .movie-details-container .movie-details {
+    width:100%;
+  }
+ 
+  .movie-details-container .movie-details .movie-info {
+    width:90%;
+    margin-left:5em;
+  }
+
+  .movie-details-container .movie-details .movie-info .description {
+    width:90%;
+  }
+}  
+
+@media (max-width:450px) {
+  /* SmartPhone */ 
+
+  .movie-details-container .movie-details {
+    width:100%;
+    display:flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top:0%;
+  }
+
+  .movie-details-container .movie-details .movie-info {
+    width:100%;
+    margin-top:1em;  
+  }
+
+  .movie-details-container .movie-details .movie-info a {
+    display:inline-block;
+    margin-left:7em;
+
+  }
+  
+} 
