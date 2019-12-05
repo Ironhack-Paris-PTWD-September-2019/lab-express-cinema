@@ -62,3 +62,75 @@ a {
  #     #  ####    ##   # ######  ####  
                                        
 */
+
+.movie-container {
+  padding:2em;
+  display: flex; 
+  flex-wrap: wrap;
+
+}
+
+.movie-container .card {
+  width:30%; 
+  display:flex; 
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom:3em;
+}
+
+.movie-container .card h2{
+  width:70%;
+  text-align: center;
+}
+.movie-container .card a {
+  font-size:1.3em;
+}
+
+/*
+ ######  ####### #######    #    ### #       
+ #     # #          #      # #    #  #       
+ #     # #          #     #   #   #  #       
+ #     # #####      #    #     #  #  #       
+ #     # #          #    #######  #  #       
+ #     # #          #    #     #  #  #       
+ ######  #######    #    #     # ### ####### 
+*/
+
+.movie-details-container {
+  padding:2em;
+}
+.movie-details-container .movie-details {
+  width:70%;
+  display:flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movie-details-container .movie-details .movie-info {
+  width:75%;
+  display :flex; 
+  flex-flow: column;
+
+}
+
+.movie-details-container .movie-details .movie-info p, .movie-details-container .movie-details .movie-info h1, .movie-details-container .movie-details .movie-info h2 {
+  margin-top:0;
+} 
+
+.movie-details-container .movie-details .movie-info a {
+  margin-bottom:0.5em;
+  font-size:115%;
+}
+
+.movie-details-container .movie-details .movie-info .description {
+  width:60%;
+}
+.movie-details-container .movie-details .movie-info .stars {
+  font-weight: bold;
+  margin-bottom:0;
+}
+.movie-details-container .movie-details .movie-info .showtime {
+  border-right : 1px solid;
+  padding-right:8px;
+}
