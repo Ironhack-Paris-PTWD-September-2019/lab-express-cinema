@@ -8,11 +8,20 @@ body {
 a {
   color: #00B7FF; }
 
+/*
+##     ##  #######  ##     ## ######## 
+##     ## ##     ## ###   ### ##       
+##     ## ##     ## #### #### ##       
+######### ##     ## ## ### ## ######   
+##     ## ##     ## ##     ## ##       
+##     ## ##     ## ##     ## ##       
+##     ##  #######  ##     ## ########                                     
+*/
 .home-page {
   min-height: 100vh;
   background: url("../images/cinema.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: 0 0;
   background-repeat: no-repeat; }
 
 .box-home {
@@ -25,7 +34,7 @@ a {
   margin-top: 0;
   margin-bottom: 0.5em;
   color: white;
-  font-size: 7em;
+  font-size: 8em;
   width: 7em; }
 
 .btn-home {
@@ -36,5 +45,82 @@ a {
   text-decoration: none;
   text-align: center;
   padding: 1em 1em; }
+
+/*
+##     ##  #######  ##     ## #### ########  ######  
+###   ### ##     ## ##     ##  ##  ##       ##    ## 
+#### #### ##     ## ##     ##  ##  ##       ##       
+## ### ## ##     ## ##     ##  ##  ######    ######  
+##     ## ##     ##  ##   ##   ##  ##             ## 
+##     ## ##     ##   ## ##    ##  ##       ##    ## 
+##     ##  #######     ###    #### ########  ######  
+*/
+.box-allMovies {
+  display: flex;
+  flex-wrap: wrap; }
+
+.one-movie {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 33%;
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+.one-movie img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.one-movie-format {
+  text-align: center;
+  width: 100%; }
+
+.one-movie p {
+  text-align: center;
+  font-weight: bold;
+  width: 100%; }
+
+.one-movie a {
+  text-align: center;
+  width: 100%; }
+
+/*
+########  ######## ########    ###    #### ##        ######  
+##     ## ##          ##      ## ##    ##  ##       ##    ## 
+##     ## ##          ##     ##   ##   ##  ##       ##       
+##     ## ######      ##    ##     ##  ##  ##        ######  
+##     ## ##          ##    #########  ##  ##             ## 
+##     ## ##          ##    ##     ##  ##  ##       ##    ## 
+########  ########    ##    ##     ## #### ########  ######  
+*/
+.movie-card {
+  display: flex;
+  align-items: center; }
+
+.img-box {
+  display: block;
+  margin-top: 1em;
+  margin-right: 3em; }
+
+span {
+  font-weight: bold; }
+
+.stars {
+  padding-left: 1em; }
+
+.description {
+  width: 50em; }
+
+.showtimes {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0; }
+
+.showtimes li {
+  width: 4em;
+  border-right: solid 1px;
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
