@@ -22,4 +22,19 @@ router.get('/movies', (req, res, next) => {
 
 })
 
+router.get('/movies/:id', (req, res, next) => {
+
+  Movie
+    .findOne({ "_id": req.params.id })
+    .then(movie => {
+      res.render('movie',
+        {
+          title: movie.title,
+          movie: movie
+        })
+    })
+    .catch(e => console.error(e))
+
+})
+
 module.exports = router;

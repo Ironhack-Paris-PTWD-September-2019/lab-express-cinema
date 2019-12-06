@@ -88,4 +88,31 @@ CLASSES
       font-size: 120%;
       text-decoration: underline; }
 
+.div-movie {
+  width: 70vw;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  padding: 3em; }
+  .div-movie img {
+    display: block; }
+  .div-movie .movie-metadata {
+    padding-left: 2em; }
+    .div-movie .movie-metadata a {
+      font-size: 100%;
+      text-decoration: underline;
+      margin-bottom: 1em;
+      display: inline-block; }
+    .div-movie .movie-metadata > h1 {
+      font-size: 1.5em;
+      margin-bottom: 0.25em; }
+    .div-movie .movie-metadata h2 {
+      font-size: 1.1em;
+      padding-bottom: 1em; }
+    .div-movie .movie-metadata .movie-description {
+      padding: 1em 0;
+      text-align: justify; }
+    .div-movie .movie-metadata li {
+      margin-left: 1em; }
+
 /*# sourceMappingURL=style.css.map */
