@@ -19,24 +19,24 @@ img {
 .accueil h1 {
   display: block;
   color: White;
-  font-size: 10em;
+  font-size: 8em;
   width: 33%;
   height: 25%;
-  margin-left: 1200px;
+  margin-left: 800px;
   padding-top: 1.5em;
   margin-top: 0; }
 
 .accueil a {
   color: #78a3b0;
   display: block;
-  font-size: 2em;
+  font-size: 1.5em;
   border: 0;
   padding: 20px;
   border-radius: 40px;
   text-decoration: none;
   background-color: white;
-  margin-left: 1200px;
-  margin-top: 2em;
+  margin-left: 800px;
+  margin-top: 5em;
   margin-bottom: auto;
   width: 20%;
   text-align: center; }
@@ -48,7 +48,7 @@ img {
 
 .movies {
   width: 30%;
-  padding: 2em;
+  padding: 1em;
   text-align: center; }
 
 .movies a {
