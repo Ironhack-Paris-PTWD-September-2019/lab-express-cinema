@@ -1,3 +1,5 @@
+*, :before, :after {box-sizing:border-box;}
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -6,3 +8,20 @@ body {
 a {
   color: #00B7FF;
 }
+
+.homepage {
+  background-image: url("../images/cinema.jpg");
+  background-size: cover ;
+  background-repeat: no-repeat ;
+}
+
+.button {
+  background-color: white;
+
+}
+
+.list {
+  background-color: white;
+}
+
+
