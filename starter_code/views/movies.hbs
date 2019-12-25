@@ -1,0 +1,14 @@
+<div class="div-movies">
+    <h1>{{title}}</h1>
+    <p>Click on the movie to check the showtimes!</p>
+
+    {{#each movies}}
+    <div class="movie">
+        <img src={{this.image}} />
+        <p>{{this.title}}</p>
+        <a href="/movies/{{this._id}}">See more</a>
+    </div>
+
+    {{/each}}
+
+</div>
